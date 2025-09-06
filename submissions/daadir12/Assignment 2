@@ -1,0 +1,50 @@
+Expanded Dataset: Crop Production in Somalia (1970-2025)
+Collection Method
+This dataset was created by extending historical data through statistical projection. The original data (1970-2025) was compiled from a historical research paper screenshot containing agricultural statistics for Somalia, published by the Somali Democratic Republic, Ministry of Agriculture. The extension to 2025 was created using linear regression trends based on the historical patterns, with adjustments for known climatic and political events that affected Somali agriculture.
+Description of Features & Labels
+The dataset captures crop production patterns in Somalia over a 56-year period, spanning significant political, economic, and environmental changes.
+Features (Input Variables X):
+•	Year: The year of record (1970-2025)
+•	Total_Crop_Land: Total cultivated area (in thousands of hectares)
+•	Maize: Area dedicated to maize cultivation (in thousands of hectares)
+•	Sorghum: Area dedicated to sorghum cultivation (in thousands of hectares)
+•	Rice: Area dedicated to rice cultivation (in thousands of hectares)
+•	Wheat: Area dedicated to wheat cultivation (in thousands of hectares)
+•	Beans: Area dedicated to bean cultivation (in thousands of hectares)
+•	Groundnuts: Area dedicated to groundnut cultivation (in thousands of hectares)
+•	Sesame: Area dedicated to sesame cultivation (in thousands of hectares)
+•	Conflict_Intensity: Scale of 0-10 representing political instability (synthetic feature)
+•	Rainfall_Deviation: Percentage deviation from average rainfall (synthetic feature)
+Label (Output Variable y):
+The dataset could be used to predict:
+•	Total_Crop_Land (regression) based on crop areas and environmental factors
+•	Crop_Failure_Risk (classification) based on combination of climate and political factors
+Dataset Structure
+The dataset contains 56 rows (years) and 11 columns (features). Below is a sample of selected years:
+Year	Total_Crop_Land	Maize	Sorghum	Rice	Wheat	Beans	Groundnuts	Sesame	Conflict_Intensity	Rainfall_Deviation
+1970	571.0	133.0	290.0	1.3	0.9	21.9	3.3	73.0	3.2	-12.4
+1975	641.1	106.0	400.0	1.6	3.5	18.8	3.3	57.0	2.8	5.6
+1980	730.8	109.0	456.8	5.9	3.5	18.5	2.5	83.0	4.5	-8.2
+1985	909.1	234.3	447.0	2.6	3.6	46.8	5.2	109.2	6.8	12.7
+1990	623.4	198.7	312.5	8.4	2.1	32.6	4.8	64.3	9.2	-28.5
+1995	587.2	173.2	294.8	10.2	1.8	38.4	5.6	62.1	8.7	-15.3
+2000	682.5	205.6	345.2	12.8	2.4	42.7	6.8	66.9	7.5	8.4
+2005	724.8	223.1	367.4	14.2	2.9	45.3	7.2	64.2	6.8	-5.7
+2010	802.4	245.8	412.6	16.8	3.4	48.9	8.1	67.5	7.2	-12.4
+2015	876.3	268.5	453.2	18.9	3.8	52.4	9.3	70.2	5.8	7.3
+2020	945.2	290.7	489.6	21.5	4.2	56.8	10.5	73.8	4.3	-9.6
+2025	1012.4	312.4	525.3	24.1	4.6	60.3	11.8	77.2	3.1	6.2
+Quality Issues
+1.	Projected Data: Values from 1988-2025 are synthetic projections based on historical trends
+2.	Inconsistent Precision: Original values have inconsistent decimal precision
+3.	Synthetic Features: Conflict_Intensity and Rainfall_Deviation are simulated based on historical events
+4.	Simplified Model: Projections assume linear trends without accounting for potential disruptive events
+5.	Missing Actual Data: No verified data available for the extended period (1988-2025)
+Use Case
+This expanded dataset could be used in several machine learning applications:
+1.	Time Series Forecasting: Predicting future crop production based on historical trends
+2.	Regression Analysis: Modeling relationships between environmental factors, political stability, and agricultural output
+3.	Classification: Categorizing years based on crop failure risk or agricultural productivity
+4.	Climate Impact Analysis: Understanding how rainfall deviations affect different crop types
+5.	Policy Simulation: Testing how hypothetical interventions might affect agricultural outcomes
+The dataset provides insights into agricultural development across periods of significant change in Somalia, making it valuable for historical analysis, forecasting, and policy planning.
